@@ -1,0 +1,265 @@
+.App {
+  font-family: sans-serif;
+}
+.header {
+  background-color: rgb(128, 128, 226);
+  width: 100vw;
+  margin-left: -8px;
+  margin-top: -20px;
+  height: 35vh;
+}
+.header h1 {
+  position: absolute;
+  left: 5px;
+  color: whitesmoke;
+  padding-top: 30px;
+}
+.header button {
+  border: 1px solid rgb(43, 25, 201);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(43, 25, 201);
+  position: absolute;
+  right: 25px;
+  top: 90px;
+  color: whitesmoke;
+  cursor: pointer;
+  width: 85px;
+}
+.header button img {
+  position: absolute;
+  margin-top: -2px;
+  left: -3px;
+  padding-left: 2px;
+}
+.header a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.header .navMenu {
+  display: inline-flex;
+  padding-top: 45px;
+  position: absolute;
+  right: 25px;
+  color: whitesmoke;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.navMenu a{
+  justify-content: space-between;
+  margin-left: 5px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.navMenu a:hover {
+  cursor: pointer;
+  color: rgb(45, 70, 145);
+}
+.companyServices {
+  font-family: sans-serif;
+}
+.section input {
+  width: 84vw;
+  margin: 10px 3px;
+  height: 36px;
+  outline: none;
+  border: 1px solid gray;
+  padding: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.section button {
+  height: 37px;
+  background-color: royalblue;
+  border: 1px solid royalblue;
+  color: whitesmoke;
+  margin-left: -35px;
+  padding: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.signInForm {
+  margin:auto 2%;
+  background-color: lightslategray;
+  width: 85vw;
+  padding: 10px;
+  height: 300px;
+  border: 1px solid lightslategray;
+  border-radius: 7px;
+  box-shadow: 0 0 3px #888888;
+}
+.signInForm h2 {
+  color: black;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 230px;
+  cursor: pointer;
+}
+.signInForm button {
+  margin-top: 80px;
+  margin-left:15%;
+  display: block;
+  padding-left: 5px;
+  border-radius: 4px;
+  height: 40px;
+  width:60vw;
+  font-size: 17px;
+  background-color: rgb(43, 25, 201);
+  border: 1px solid rgb(43, 25, 201);
+}
+.signInForm input {
+  display: block;
+  margin: 13px auto;
+  height: 35px;
+  width: 59vw;
+  padding-left: 5px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  outline: none;
+}
+.signInForm input[type="checkbox"] {
+  width: 15px;
+  float: left;
+  margin-left: 14%;
+  margin-top: -10px;
+}
+.signInForm label {
+  position: absolute;
+  margin-left: 10px;
+}
+.productsAndDescription {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.sslDescription,
+.webSharingDescription,
+.vpsDescription,
+.dnsDescription {
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: lightslategray;
+  height: 100%;
+}
+.sslDescription img,
+.webSharingDescription img,
+.dnsDescription img {
+  border-radius: 7px;
+}
+.sslDescription:hover,
+.webSharingDescription:hover,
+.vpsDescription:hover,
+.dnsDescription:hover{
+  box-shadow:0 0 20px #888888;
+}
+.productsAndDescription hr {
+  width: 100%;
+  margin-top: 30px;
+}
+.pertinentInfo {
+  background-color: rgb(128, 128, 226);
+  height: 170px;
+  width: 100vw;
+  padding: 10px;
+  margin-left: -10px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  color: whitesmoke;
+}
+.pertinentInfo aside {
+  font-size: 14px;
+  margin-top: 40px;
+}
+nav li {
+  margin: 10px 5px;
+  cursor: pointer;
+  font-size: bold;
+}
+nav li:hover {
+  color: rgb(17, 40, 109);
+}
+@media screen and (min-width: 376px) {
+  .section input {
+    width: 80vw;
+    margin: 10px auto;
+  }
+  .section button {
+    width: 18%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header .navMenu {
+    left: 0px;
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width:500px){
+  .productsAndDescription {
+    flex-flow: column;
+    margin: 2px;
+  }
+  .sslDescription,
+  .vpsDescription,
+  .webSharingDescription,
+  .dnsDescription {
+    justify-content: space-between;
+    margin: 5px 2px;
+  }
+  .signInForm h2{
+    top: 40%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .productsAndDescription {
+    height: 350px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .header .navMenu {
+    right: 10px;
+  }
+  .header button {
+    right: 10px;
+  }
+  .navMenu a {
+    margin-left: 10px;
+  }
+  .section input {
+    height: 40px;
+    font-size: 16px;
+  }
+  .section button {
+    height: 41px;
+    font-size: 16px;
+  }
+  .signInForm input {
+    height: 45px;
+    width: 45vw;
+    padding-left: 7px;
+    margin-bottom: 15px;
+    outline: none;
+  }
+  .signInForm{
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 15%;
+    width: 70vw;
+  }
+  .signInForm input[type="checkbox"] {
+    margin-left: 17%;
+  }
+  .signInForm label {
+    margin-left: 20px;
+  }
+  .signInForm button {
+    margin-left:17%;
+    display: block;
+    width: 47vw;
+    height:50px;
+  }
+  .signInForm h2{
+    display: none;
+  }
+}
